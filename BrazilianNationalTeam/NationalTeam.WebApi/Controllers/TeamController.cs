@@ -32,6 +32,13 @@ namespace NationalTeam.WebApi.Controllers
             return _teamRepository.GetAll();
         }
 
+        [Route(template:"api/[controller]/meuqueridotestejson")]
+        [HttpGet]
+        public string MeuQueridoTesteJson()
+        {
+            return "Treinamento Midas Solutions 2020 !!!";
+        }
+
         [Route("api/[controller]/teste")]
         [HttpGet]
         public string Teste()
